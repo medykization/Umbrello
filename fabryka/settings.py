@@ -27,7 +27,8 @@ SECRET_KEY = '@zd8j4)0b0p=h6w@ihczc#x^c91-_lm&c$_zgf9xl(1%1&y!_3'
 DEBUG = True
 
 ALLOWED_HOSTS = ['umbrelloo.herokuapp.com',
-                '127.0.0.1']
+                '127.0.0.1',
+                'localhost']
 
 
 # Application definition
