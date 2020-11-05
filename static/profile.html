@@ -1,0 +1,52 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Profil</title>
+    <link rel="stylesheet" href="{% static 'menu_bar.css' %}">
+    <link rel="stylesheet" href="{% static 'profile.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+
+    <header>
+      <nav>
+        <a href="{% url 'index' %}"><img src="{% static 'images/logo.png' %}"></a>
+        <div class="search-container">
+          
+        </div>
+        {% if user.is_authenticated %}
+        <form action="{% url 'home' %}">
+          <button>Profil</button>
+        </form>
+        {% else %}
+        <form action="{% url 'login' %}">
+          <button>Logowanie</button>
+        </form>
+        {% endif %}
+      </nav>
+    </header>
+
+
+
+      <div class="central-container">
+        <img src="{% static 'images/avatar.png' %}">
+        <form action="{% url 'logout' %}">
+          <button>WYLOGUJ</button>
+        </form>
+        
+        
+
+
+
+  <footer>
+    <p>Copyright &copy; 2020 - Fabryka Inżyniera</p>
+  </footer>
+
+
+
+  </body>
+</html>

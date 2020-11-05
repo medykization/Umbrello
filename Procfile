@@ -1,1 +1,1 @@
-web: gunicorn umbrello.wsgi --log-file -
+web: gunicorn fabryka.wsgi --log-file -
