@@ -13,7 +13,7 @@
   <body>
     <header>
       <nav>
-        <a href="{% url 'index' %}"><img src="{% static 'images/logo.png' %}"></a>
+        <a href="{% url 'index' %}"></a>
         <div class="search-container">
           <form action="{% url 'search_results' %}" method="get">
             <input type="text" placeholder="Wyszukaj prowadzącego.." name="q">
@@ -55,7 +55,7 @@
 </div>
 
     <footer>
-      <p>Copyright &copy; 2020 - Fabryka Inżyniera</p>
+      <p>Copyright &copy; 2020 - Umbrello</p>
     </footer>
   </body>
 </html>
